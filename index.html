@@ -24,16 +24,10 @@ randomlinks[4]="http://www.geocities.com"
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
-//-->
-</script>
-<form method="post">
-<p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>
 
-<!--Uncomment below to use a regular text link instead
-<a href="javascript:randomlink()">Random Link</a>
--->
+</script>
 </head>
-<body>
+<body onload="randomlink()">
 
 </body>
 </html>
